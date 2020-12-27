@@ -1,0 +1,163 @@
+* {
+    outline:none;
+      border:none;
+      margin:0px;
+      padding:0px;
+  }
+  body {
+      background: url(https://static.tumblr.com/maopbtg/a5emgtoju/inflicted.png) no-repeat;
+      background-attachment: fixed;
+      background-size: cover; 
+  }
+  #paper {
+      color:#FFF;
+      font-size:20px;
+  }
+  #fle{
+    width: 100%;
+    padding-left: 10px;
+  }
+  #inp{
+    width: 100%;
+  }
+  #margin {
+      margin-left:12px;
+      margin-bottom:20px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none; 
+      float: left;
+  }
+  #floatingTextarea2 {
+      width:100%;
+      background-color:#FFF;
+      color:#222;
+      font-weight:normal;
+      font-size:15px;
+      line-height:40px;
+      padding-left:94px;
+      padding-right:0px;
+      padding-top:45px;
+      padding-bottom:34px;
+      background-image:url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);
+      background-repeat:repeat-y, repeat;
+      -webkit-box-shadow: 0px 2px 14px #000;
+      box-shadow: 0px 2px 14px #000;
+      border-top:1px solid #FFF;
+      border-bottom:1px solid #FFF;
+
+  }
+  #title {
+      background-color:transparent;
+      border-bottom:3px solid #FFF;
+      color:#FFF;
+      font-size:20px;
+      font-family:Courier, monospace;
+      height:28px;
+      font-weight:bold;
+      width:220px;
+  }
+  #wrapper {
+      width:auto;
+      max-width: 700px;
+      height:auto;
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:24px;
+      margin-bottom:100px;
+      display: block;
+  }
+  .form-floating{
+    font-family: var(--font);
+  }
+  .form-floating>label{
+      margin-top: 85px;
+      margin-left: 94px;
+      color: #000;
+  }
+  #save>img{
+      width: 40px;
+      margin-right: 20px;
+  }
+  .date{
+      color: white;
+      width: 150px;
+      height: 75px;
+      background: #000;
+      text-align: center;
+      margin: 10px;
+  }
+  .hide{
+      display: none;
+  }
+  .card-title>span{
+    background:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.card.hide{
+    display: none;
+}
+.outer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    cursor: pointer;
+    height: 20px;
+  }
+  
+  .inner {
+    width: inherit;
+    text-align: center;
+    height: 20px;
+  }
+  
+  .loi { 
+    font-size: .8em; 
+    line-height: 4em;
+    text-transform: uppercase;
+    color: rgb(14, 1, 1);
+    transition: all .3s ease-in;
+    opacity: 0;
+    cursor: pointer;
+    margin-top: -30px
+  }
+  
+  .inner:before, .inner:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: inherit;
+    background: #111111;
+    left: 0;
+    transition: all .3s ease-in;
+  }
+  
+  .inner:before {
+    top: 50%; 
+    transform: rotate(45deg);  
+  }
+  
+  .inner:after {  
+    bottom: 50%;
+    transform: rotate(-45deg);  
+  }
+  
+  .outer:hover label {
+    opacity: 1;
+  }
+  
+  .outer:hover .inner:before,
+  .outer:hover .inner:after {
+    transform: rotate(0);
+  }
+  
+  .outer:hover .inner:before {
+    top: 0;
+  }
+  
+  .outer:hover .inner:after {
+    bottom: 0;
+  }

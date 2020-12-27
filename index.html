@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="note.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <title>NOTES</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="save"><img src="save.png" alt="" class="img" id="img">Save</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <form class="d-flex" id="fle">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="inp" x-webkit-speech>
+              </form>
+              <div class="row row-cols-1 row-cols-md-3 g-0" id="card-group">
+              </div>
+            </div>
+          </div>
+      </nav>
+    <div id="wrapper">
+	<div id="paper">
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="sel" style="height: 35px; font-size: 15px;" onchange="change(this.value)">
+            <option selected value="Arial, Helvetica, sans-serif">Arial</option>
+            <option value="'Arial Black', Gadget, sans-serif" style="font-family: 'Arial Black', Gadget, sans-serif;">Arial Black</option>
+            <option value="'Comic Sans MS', cursive" style="font-family: 'Comic Sans MS', cursive;">Comic Sans MS</option>
+            <option value="'Courier New', Courier, monospace" style="font-family: 'Courier New', Courier, monospace;">Courier New</option>
+            <option value="Georgia, serif" style="font-family: Georgia, serif;">Georgia<sup>1</sup></option>
+            <option value="Impact,Charcoal, sans-serif" style="font-family: Impact,Charcoal, sans-serif;">Impact</option>
+            <option value="'Lucida Console', Monaco, monospace" style="font-family: 'Lucida Console', Monaco, monospace;">Lucida Console</option>
+            <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif" style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Lucida Sans Unicode</option>
+            <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif" style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">Palatino Linotype, Book Antiqua<sup>3</sup></option>
+            <option value="Tahoma, Geneva, sans-serif" style="font-family: Tahoma, Geneva, sans-serif;">Tahoma</option>
+            <option value="'Times New Roman', Times, serif" style="font-family: 'Times New Roman', Times, serif;">Times New Roman</option>
+            <option value="Verdana, Geneva, sans-serif" style="font-family: Verdana, Geneva, sans-serif;">Verdana</option>
+            <option value="Symbol" style="font-family: Symbol;">Symbol<sup>2</sup></option>
+            <option value="'Trebuchet MS', Helvetica, sans-serif" style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Trebuchet MS<sup>1</sup></option>
+            <option value="Webdings" style="font-family: Webdings">Webdings2</option>
+            <option value="Wingdings, 'Zapf Dingbats'" style="font-family: Wingdings, 'Zapf Dingbats'">Wingdings2</option>
+            <option value="'MS Sans Serif', Geneva, sans-serif" style="font-family: 'MS Sans Serif', Geneva, sans-serif;">MS Sans Serif4</option>
+            <option value="'MS Serif', 'New York', serif" style="font-family: 'MS Serif', 'New York', serif;">MS Serif4</option>
+            <option value="'Inconsolata', monospace" style="font-family: 'Inconsolata', monospace;">Inconsolata</option>
+          </select>
+        <div class="form-floating" id="fr">
+            <div id="margin">Title: <input id="title" type="text" name="title" value="new note"></div>
+            <textarea placeholder="Enter something funny!" class="form-control" id="floatingTextarea2" name="text" rows="4" style=" height: 160px;" ></textarea>
+            <label for="floatingTextarea2">Enter something funny!</label>
+		<br>
+    </div>
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">https://</span>
+  <input type="url" class="form-control" placeholder="URL" aria-label="URL" aria-describedby="basic-addon1" id="url">
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
